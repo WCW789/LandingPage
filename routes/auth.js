@@ -1,83 +1,83 @@
-var authController = require('../Controllers/authcontroller');
-var path = require("path");
-var db = require("../Models");
+// var authController = require('../Controllers/authcontroller');
+// var path = require("path");
+// var db = require("../Models");
 
-module.exports = function(app, passport) {
- 
-    app.get('/signup', authController.signup);
+// module.exports = function(app, passport) {
 
-    app.get('/signin', authController.signin);
+//     app.get('/signup', authController.signup);
 
-    app.get('/logout', authController.logout);
+//     app.get('/signin', authController.signin);
 
-    function isLoggedIn(req, res, next) {
-      if (req.isAuthenticated()) {
-          return next();
-      } else {
-        console.log("didn't work")
-        res.redirect('/signin')
-      }
-  }
+//     app.get('/logout', authController.logout);
 
-  app.get('/checkLogin', isLoggedIn, function(req,res){
-    console.log('check @@@@@', req.user);
-    res.json({data: req.user});
-  })
+//     function isLoggedIn(req, res, next) {
+//       if (req.isAuthenticated()) {
+//           return next();
+//       } else {
+//         console.log("didn't work")
+//         res.redirect('/signin')
+//       }
+//   }
 
-  app.get('/grabData/:ownerorsitter/:usercity', function (req, res) {
-    console.log('check !!!!!!', req.params);
+//   app.get('/checkLogin', isLoggedIn, function(req,res){
+//     console.log('check @@@@@', req.user);
+//     res.json({data: req.user});
+//   })
 
-    var Sequelize = require('sequelize');
-    const Op = Sequelize.Op
+//   app.get('/grabData/:ownerorsitter/:usercity', function (req, res) {
+//     console.log('check !!!!!!', req.params);
 
-  db.AllUsers.findAll({
-    where: {
-      ownerorsitter: 
-       {
-         [Op.ne]: 
-         req.params.ownerorsitter
-       },
-       usercity: 
-       {
-         [Op.eq]: 
-         req.params.usercity
-       }
-     }
-    }).then(function(dbperson) {
-      console.log("star")
-      res.setHeader('Content-Type', 'text/html');
+//     var Sequelize = require('sequelize');
+//     const Op = Sequelize.Op
 
-        res.json({userData: dbperson})
+//   db.AllUsers.findAll({
+//     where: {
+//       ownerorsitter: 
+//        {
+//          [Op.ne]: 
+//          req.params.ownerorsitter
+//        },
+//        usercity: 
+//        {
+//          [Op.eq]: 
+//          req.params.usercity
+//        }
+//      }
+//     }).then(function(dbperson) {
+//       console.log("star")
+//       res.setHeader('Content-Type', 'text/html');
 
-       })
+//         res.json({userData: dbperson})
 
-  })
+//        })
 
-     app.get('/dashboard', isLoggedIn, function (req, res) {
+//   })
 
-     console.log("apple");
-      var Sequelize = require('sequelize');
-      const Op = Sequelize.Op
+//      app.get('/dashboard', isLoggedIn, function (req, res) {
 
-    db.AllUsers.findAll({
-      where: {
-        ownerorsitter: 
-         {
-           [Op.ne]: 
-           req.user.ownerorsitter
-         },
-         usercity: 
-         {
-           [Op.eq]: 
-           req.user.usercity
-         }
-       }
-      }).then(function(dbperson) {
-        console.log("star")
-        res.setHeader('Content-Type', 'text/html');
+//      console.log("apple");
+//       var Sequelize = require('sequelize');
+//       const Op = Sequelize.Op
 
-          res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/dashboard.html"));
+//     db.AllUsers.findAll({
+//       where: {
+//         ownerorsitter: 
+//          {
+//            [Op.ne]: 
+//            req.user.ownerorsitter
+//          },
+//          usercity: 
+//          {
+//            [Op.eq]: 
+//            req.user.usercity
+//          }
+//        }
+//       }).then(function(dbperson) {
+//         console.log("star")
+//         res.setHeader('Content-Type', 'text/html');
 
-         })
-    });
-  }
+//           res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/dashboard.html"));
+
+//          })
+//     });
+//   }

@@ -22,9 +22,9 @@ app.use(express.static("public"));
 app.use(express.static(__dirname + '/public/appTemplate'));
 app.use(express.static(__dirname + '/public'));
 
-require("./routes/api-routes").app;
+// require("./routes/api-routes").app;
 require("./routes/html-routes")(app);
-require("./routes/login-routes")(app);
+// require("./routes/login-routes")(app);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
