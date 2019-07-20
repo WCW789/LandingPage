@@ -3,7 +3,7 @@ let path = require("path");
 module.exports = function (app) {
   app.get("/link1", function (req, res) {
     console.log('We hit link1');
-    res.sendFile(path.join(__dirname, "../public/appTemplate/code/dark/gallery-round.html"), {});
+    res.sendFile(path.join(__dirname, "../public/appTemplate/code/dark/page-contact.html"), {});
   });
 
   app.get("/link2", function (req, res) {

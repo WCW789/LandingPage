@@ -12,7 +12,7 @@ let PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-let Contact = require("./models")
+let Contact = require("./models/code.js")
 
 app.set('views', './public')
 app.engine('html', require('ejs').renderFile);
@@ -32,8 +32,10 @@ app.use(bodyParser.json());
 console.log("tessssssst");
 
 app.post("/submit", function (req, res) {
+  console.log(req.body)
   Contact.create(req.body)
     .catch(err => res.status(422).json(err));
+  console.log("hey")
 });
 
 mongoose.connect(

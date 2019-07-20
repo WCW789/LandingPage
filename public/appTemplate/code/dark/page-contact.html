@@ -793,7 +793,8 @@
                             </div>
                         </div>
 
-                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <!-- <form action="php/contact.php" method="post" class="contactForm" id="contactForm"> -->
+                        <form action="/submit" class="contactForm" id="contactForm">
                             <fieldset>
                                 <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
                                     <p class="center-text uppercase small-text">Name is required!</p>
@@ -809,15 +810,15 @@
                                 </div>   
                                 <div class="formFieldWrap">
                                     <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
-                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                    <input type="text" name="namePerson" value="" class="contactField requiredField" id="namePerson"/>
                                 </div>
                                 <div class="formFieldWrap">
                                     <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
-                                    <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                    <input type="text" name="email" value="" class="contactField requiredField requiredEmailField" id="email"/>
                                 </div>
                                 <div class="formTextareaWrap">
                                     <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
-                                    <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                    <textarea name="message" class="contactTextarea requiredField" id="message"></textarea>
                                 </div>
                                 <div class="formSubmitButtonErrorsWrap contactFormButton">
                                     <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="Send Message" data-formId="contactForm"/>
