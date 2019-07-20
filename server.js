@@ -19,7 +19,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.use(express.static("public"));
-app.use(express.static(__dirname + '/public/appTemplate'));
+app.use(express.static(__dirname + '/public/appTemplate/code/dark'));
 app.use(express.static(__dirname + '/public'));
 
 // require("./routes/api-routes").app;
