@@ -52,6 +52,15 @@
 .header-icon-3{right:60px;  width:40px; font-size:10px;}
 .header-icon-4{right:0px;   width:60px;}
 
+.header-all{
+    /* background-repeat: no-repeat;
+    background-size:112px 16px;
+    width:112px;
+    height:25px; */
+    /* margin-top:22px; */
+    margin-left:auto;
+}
+
 .header-logo{
     background-repeat: no-repeat;
     background-size:112px 16px;

@@ -11,6 +11,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/appTemplate/code/dark/index-circle.html"), {});
   });
 
+  app.get("/team", function (req, res) {
+    console.log('We hit the team link');
+    res.sendFile(path.join(__dirname, "../public/appTemplate/code/dark/team.html"), {});
+  });
+
   app.get("/contact", function (req, res) {
     console.log('We hit the contact link');
     res.sendFile(path.join(__dirname, "../public/appTemplate/code/dark/page-contact.html"), {});

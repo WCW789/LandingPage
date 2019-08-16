@@ -24,14 +24,25 @@
     <link
         href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <title>Hacking House</title>
 
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles/framework.css">
     <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
     <script type="text/javascript" src="scripts/jquery.js"></script>
     <script type="text/javascript" src="scripts/plugins.js"></script>
@@ -39,45 +50,60 @@
 </head>
 
 <body>
-    <div class="gallery-fix"></div><!-- Fix Gallery next/prev error on Android -->
-    <div class="sidebar-tap-close"></div><!-- Overlay for content to close Sidebar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
 
-    <div class="header-fixed header-dark">
-        <h1 style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);display: inline">
-            <a href="/"><i class="fas fa-info-circle"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="/contact"><i class="fas fa-mail-bulk"></i></a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto"></ul>
+            <div class="navbar-nav my-0 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/"><i class="fas fa-home">Home</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team"><i class="fas fa-id-card-alt">Team</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact"><i class="fas fa-mail-bulk">Contact</i></a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-strip">
+        <div class="strip-content">
+        </div>
     </div>
-
 
     <div id="page-content">
         <div id="page-content-scroll">
-            <!--Enables this element to be scrolled -->
             <div class="header-clear"></div>
 
             <div>
-                <!-- Slideshow container -->
                 <div class="slideshow-container">
 
-                    <div class="mySlides fade">
-                        <!-- <div class="numbertext">1 / 3</div> -->
-                        <img src="images/pictures/slide1.JPG" style="width:85%">
+                    <div class="mySlides">
+                        <img src="images/pictures/slide1.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/pictures/slide2.JPG" style="width:85%">
+                    <div class="mySlides">
+                        <img src="images/pictures/slide2.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/pictures/slide3.JPG" style="width:85%">
+                    <div class="mySlides">
+                        <img src="images/pictures/slide3.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/pictures/slide4.JPG" style="width:85%">
+                    <div class="mySlides">
+                        <img src="images/pictures/slide4.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/pictures/slide5.JPG" style="width:85%">
+                    <div class="mySlides">
+                        <img src="images/pictures/slide5.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
 
@@ -104,27 +130,23 @@
             <br><br>
 
             <div>
-                <!-- Slideshow container -->
                 <div class="slideshow-container">
 
-                    <div class="mySlides2 fade">
-                        <img src="images/pictures/slide4.JPG" style="width:85%">
-                        <div class="numbertext">1 / 3</div>
+                    <div class="mySlides2">
+                        <img src="images/pictures/slide6.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides2 fade">
-                        <img src="images/pictures/slide5.JPG" style="width:85%">
-                        <div class="numbertext">2 / 3</div>
+                    <div class="mySlides2">
+                        <img src="images/pictures/slide7.JPG" style="width:85%; margin-left: 60px">
                     </div>
 
-                    <div class="mySlides2 fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/pictures/slide6.JPG" style="width:85%">
+                    <div class="mySlides2">
+                        <img src="images/pictures/slide8.JPG" style="width:85%; margin-left: 60px">
 
                     </div>
 
-                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    <a class="prev1" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next1" onclick="plusSlides2(1)">&#10095;</a>
                 </div>
                 <br>
 
@@ -142,7 +164,6 @@
 
             <div class="footer footer-dark">
                 <div class="footer-content">
-                    <!-- <a href="#" class="footer-logo"></a> -->
                     <p class="footer-text">
                         We are here to help give peace of mind to families and ensure our elders get the care they
                         deserve
@@ -202,13 +223,10 @@
 
     let SI2 = 1;
     showSlides2(SI2);
-
-    // Next/previous controls
     function plusSlides2(n) {
         showSlides2(SI2 += n);
     }
 
-    // Thumbnail image controls
     function currentSlide2(n) {
         showSlides2(SI2 = n);
     }
