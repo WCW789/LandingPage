@@ -271,7 +271,7 @@ ol > li:last-child, ul > li:last-child {
 }
 
 textarea{
-    font-family:'Roboto', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 /*---Background and text colors and hovers---*/
@@ -418,7 +418,7 @@ textarea{
 /*---Heading Settings---*/
 
 h1, h2, h3, h4, h5, h6{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     color:#1f1f1f;
     margin-bottom:10px;
 }
@@ -473,7 +473,7 @@ h6{
 
 body{
     font-size:14px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     line-height:30px;
     font-weight:400;
     color:#666666;
