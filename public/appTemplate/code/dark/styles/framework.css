@@ -2319,8 +2319,8 @@ ul.tabs li.active-tab{
 .button-teal:hover{		background-color:#1abc9c;}
 
 .green-3d{				padding-top:5px; padding-bottom:5px; border-bottom:solid 4px #1e8248;}
-.button-green{			background-color:#27ae60; color:#FFFFFF;}
-.button-green:hover{	background-color:#2ecc71;}
+.button-green{			background-color:#008B8B; color:#FFFFFF;}
+.button-green:hover{	background-color:#7FFFD4;}
 
 .blue-3d{				padding-top:5px; padding-bottom:5px; border-bottom:solid 4px #194e70;}
 .button-blue{			background-color:#2980b9; color:#FFFFFF;}
