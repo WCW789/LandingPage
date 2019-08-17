@@ -38,9 +38,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles/framework.css">
     <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 
@@ -52,143 +53,144 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <!-- <div id="page-content"> -->
+    <div id="page-content-scroll">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto"></ul>
-            <div class="navbar-nav my-0 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/"><i class="fas fa-home">Home</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/team"><i class="fas fa-id-card-alt">Team</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact"><i class="fas fa-mail-bulk">Contact</i></a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto"></ul>
+                <div class="navbar-nav my-0 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/team"><i class="fas fa-id-card-alt">Team</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact"><i class="fas fa-mail-bulk">Contact</i></a>
+                    </li>
 
+                </div>
+            </div>
+        </nav>
+
+        <div class="content-strip">
+            <div class="strip-content">
             </div>
         </div>
-    </nav>
 
-    <div class="content-strip">
-        <div class="strip-content">
+
+        <!-- <div class="header-clear"></div> -->
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="images/pictures/slide1.JPG" style="width:85%; margin-left: 60px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/pictures/slide2.JPG" style="width:85%; margin-left: 60px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/pictures/slide3.JPG" style="width:85%; margin-left: 60px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/pictures/slide4.JPG" style="width:85%; margin-left: 60px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/pictures/slide5.JPG" style="width:85%; margin-left: 60px">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
         </div>
-    </div>
+        <br>
+        <p></p>
+        </p>
 
-    <div id="page-content">
-        <div id="page-content-scroll">
-            <div class="header-clear"></div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide1(1)"></span>
+            <span class="dot" onclick="currentSlide1(2)"></span>
+            <span class="dot" onclick="currentSlide1(3)"></span>
+            <span class="dot" onclick="currentSlide1(4)"></span>
+            <span class="dot" onclick="currentSlide1(5)"></span>
+        </div>
 
 
+        <div class="content">
+            <div class="decoration"></div>
+        </div>
+
+        <br><br>
+
+        <div>
             <div class="slideshow-container">
 
-                <div class="mySlides">
-                    <img src="images/pictures/slide1.JPG" style="width:85%; margin-left: 60px">
+                <div class="mySlides2">
+                    <img src="images/pictures/slide6.JPG" style="width:85%; margin-left: 60px">
                 </div>
 
-                <div class="mySlides">
-                    <img src="images/pictures/slide2.JPG" style="width:85%; margin-left: 60px">
+                <div class="mySlides2">
+                    <img src="images/pictures/slide7.JPG" style="width:85%; margin-left: 60px">
                 </div>
 
-                <div class="mySlides">
-                    <img src="images/pictures/slide3.JPG" style="width:85%; margin-left: 60px">
+                <div class="mySlides2">
+                    <img src="images/pictures/slide8.JPG" style="width:85%; margin-left: 60px">
+
                 </div>
 
-                <div class="mySlides">
-                    <img src="images/pictures/slide4.JPG" style="width:85%; margin-left: 60px">
-                </div>
-
-                <div class="mySlides">
-                    <img src="images/pictures/slide5.JPG" style="width:85%; margin-left: 60px">
-                </div>
-
-
-                <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                <a class="prev1" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlides2(1)">&#10095;</a>
             </div>
             <br>
-            <p></p>
-            </p>
 
             <div style="text-align:center">
-                <span class="dot" onclick="currentSlide1(1)"></span>
-                <span class="dot" onclick="currentSlide1(2)"></span>
-                <span class="dot" onclick="currentSlide1(3)"></span>
-                <span class="dot" onclick="currentSlide1(4)"></span>
-                <span class="dot" onclick="currentSlide1(5)"></span>
+                <span class="dot2" onclick="currentSlide2(1)"></span>
+                <span class="dot2" onclick="currentSlide2(2)"></span>
+                <span class="dot2" onclick="currentSlide2(3)"></span>
             </div>
-
-
-            <div class="content">
-                <div class="decoration"></div>
-            </div>
-
-            <br><br>
-
-            <div>
-                <div class="slideshow-container">
-
-                    <div class="mySlides2">
-                        <img src="images/pictures/slide6.JPG" style="width:85%; margin-left: 60px">
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/pictures/slide7.JPG" style="width:85%; margin-left: 60px">
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/pictures/slide8.JPG" style="width:85%; margin-left: 60px">
-
-                    </div>
-
-                    <a class="prev1" onclick="plusSlides2(-1)">&#10094;</a>
-                    <a class="next1" onclick="plusSlides2(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot2" onclick="currentSlide2(1)"></span>
-                    <span class="dot2" onclick="currentSlide2(2)"></span>
-                    <span class="dot2" onclick="currentSlide2(3)"></span>
-                </div>
-            </div>
-
-
-            <div class="content">
-                <div class="decoration"></div>
-            </div>
-
-            <div class="footer footer-dark">
-                <div class="footer-content">
-                    <p class="footer-text">
-                        We are here to help give peace of mind to families and ensure our elders get the care they
-                        deserve
-
-                    </p>
-                </div>
-                <br>
-                <div class="footer-socials">
-                    <a href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="scale-hover google-color"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="scale-hover mail-color show-share-bottom"><i class="fa fa-refresh"></i></a>
-                    <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
-                    <div class="clear"></div>
-                </div>
-                <p class="footer-strip">Copyright <span id="copyright-year"></span> Enabled. All Rights Reserved</p>
-            </div>
-            <div class="footer-clear disabled"></div>
         </div>
 
-        <!-- <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a> -->
+
+        <div class="content">
+            <div class="decoration"></div>
+        </div>
+
+        <div class="footer footer-dark">
+            <div class="footer-content">
+                <p class="footer-text">
+                    We are here to help give peace of mind to families and ensure our elders get the care they
+                    deserve
+
+                </p>
+            </div>
+            <br>
+            <div class="footer-socials">
+                <a href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="scale-hover google-color"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
+                <a href="#" class="scale-hover mail-color show-share-bottom"><i class="fa fa-refresh"></i></a>
+                <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+                <div class="clear"></div>
+            </div>
+            <p class="footer-strip">Copyright <span id="copyright-year"></span> Enabled. All Rights Reserved</p>
+        </div>
+        <div class="footer-clear disabled"></div>
     </div>
+
+    <!-- <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a> -->
+    <!-- </div> -->
 </body>
 
 <script type="text/javascript">
