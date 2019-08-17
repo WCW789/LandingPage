@@ -52,146 +52,143 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- <div id="page-content"> -->
+    <div id="page-content-scroll">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto"></ul>
-            <div class="navbar-nav my-0 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/"><i class="fas fa-home">Home</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about"><i class="fas fa-info-circle">About</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/team"><i class="fas fa-id-card-alt">Team</i></a>
-                </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto"></ul>
+                <div class="navbar-nav my-0 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><i class="fas fa-info-circle">About</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/team"><i class="fas fa-id-card-alt">Team</i></a>
+                    </li>
+
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+        <div class="header-clear"></div>
+        <div class="content">
+            <br>
+            <div class="one-half-responsive">
+                <div class="container heading-style">
+                    <h4 class="heading-title">Get in touch!</h4>
+                    <i class="fa fa-envelope-o heading-icon"></i>
+                    <div class="line bg-black"></div>
+                </div>
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom">
+
+                        <form class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
+                                    <p class="center-text uppercase small-text">Name is required!</p>
+                                </div>
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
+                                    <p class="center-text uppercase small-text">Mail address required!</p>
+                                </div>
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
+                                    <p class="center-text uppercase small-text">Mail address must be valid!</p>
+                                </div>
+                                <div class="formValidationError bg-red-dark color-white"
+                                    id="contactMessageTextareaError">
+                                    <p class="center-text uppercase small-text">Message field is empty!</p>
+                                </div>
 
 
-    <div id="page-content">
-        <div id="page-content-scroll">
-            <!--Enables this element to be scrolled -->
-            <div class="header-clear"></div>
-            <div class="content">
-                <br>
-                <div class="one-half-responsive">
-                    <div class="container heading-style">
-                        <h4 class="heading-title">Get in touch!</h4>
-                        <i class="fa fa-envelope-o heading-icon"></i>
-                        <div class="line bg-black"></div>
-                    </div>
-                    <div class="container no-bottom">
-                        <div class="contact-form no-bottom">
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField"
+                                        for="contactNameField">Name:<span>(required)</span></label>
+                                    <input type="text" name="namePerson" value="" class="contactField requiredField"
+                                        id="first_q" />
+                                </div>
+                                <p id='checknull1'></p>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactEmailField" for="contactEmailField">Email:
+                                        <span>(required)</span></label>
+                                    <input type="text" name="email" value=""
+                                        class="contactField requiredField requiredEmailField" id="second_q" />
+                                </div>
+                                <p id='valid'></p>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea"
+                                        for="contactMessageTextarea">Message:
+                                        <span>(required)</span></label>
+                                    <textarea name="message" class="contactTextarea requiredField"
+                                        id="third_q"></textarea>
+                                </div>
+                                <p id='checknull3'></p>
 
-                            <form class="contactForm" id="contactForm">
-                                <fieldset>
-                                    <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
-                                        <p class="center-text uppercase small-text">Name is required!</p>
-                                    </div>
-                                    <div class="formValidationError bg-red-dark color-white"
-                                        id="contactEmailFieldError">
-                                        <p class="center-text uppercase small-text">Mail address required!</p>
-                                    </div>
-                                    <div class="formValidationError bg-red-dark color-white"
-                                        id="contactEmailFieldError2">
-                                        <p class="center-text uppercase small-text">Mail address must be valid!</p>
-                                    </div>
-                                    <div class="formValidationError bg-red-dark color-white"
-                                        id="contactMessageTextareaError">
-                                        <p class="center-text uppercase small-text">Message field is empty!</p>
-                                    </div>
+                                <div class="formSubmitButtonErrorsWrap contactFormButton">
+                                    <input type="submit" class="buttonWrap button button-green contactSubmitButton"
+                                        id="submit" value="Send Message" data-formId="contactForm" />
+                                </div>
 
-
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactNameField"
-                                            for="contactNameField">Name:<span>(required)</span></label>
-                                        <input type="text" name="namePerson" value="" class="contactField requiredField"
-                                            id="first_q" />
-                                    </div>
-                                    <p id='checknull1'></p>
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactEmailField" for="contactEmailField">Email:
-                                            <span>(required)</span></label>
-                                        <input type="text" name="email" value=""
-                                            class="contactField requiredField requiredEmailField" id="second_q" />
-                                    </div>
-                                    <p id='valid'></p>
-                                    <div class="formTextareaWrap">
-                                        <label class="field-title contactMessageTextarea"
-                                            for="contactMessageTextarea">Message:
-                                            <span>(required)</span></label>
-                                        <textarea name="message" class="contactTextarea requiredField"
-                                            id="third_q"></textarea>
-                                    </div>
-                                    <p id='checknull3'></p>
-
-                                    <div class="formSubmitButtonErrorsWrap contactFormButton">
-                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton"
-                                            id="submit" value="Send Message" data-formId="contactForm" />
-                                    </div>
-
-                                </fieldset>
-                            </form>
-                        </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
-                <div class="decoration hide-if-responsive"></div>
-                <div class="one-half-responsive last-column">
-                    <div class="container no-bottom">
-                        <h4>Contact Information</h4>
-                        <p>
-                            <strong>Headquarters</strong><br>
-                            Merchandise Mart <br>
-                            Chicago, IL
-                        </p>
-                        <p>
-                            <strong>Contact Information:</strong><br>
-                            <a href="#" class="contact-call"><i class="fa fa-phone"></i>To Be Announced</a>
-                            <a href="#" class="contact-text"><i class="fa fa-comments"></i>To Be Announced</a>
-                            <a href="#" class="contact-text"><i class="fa fa-fax"></i>To Be Announced</a>
-                            <a href="#" class="contact-mail"><i class="fa fa-envelope"></i>To Be Announced</a>
-                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>To Be Announced</a>
-                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>To Be Announced</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="decoration"></div>
             </div>
-
-            <div class="footer footer-dark">
-                <div class="footer-content">
-                    <p class="footer-text">
-                        We are here to help give peace of mind to families and ensure our elders get the care they
-                        deserve
-
+            <div class="decoration hide-if-responsive"></div>
+            <div class="one-half-responsive last-column">
+                <div class="container no-bottom">
+                    <h4>Contact Information</h4>
+                    <p>
+                        <strong>Headquarters</strong><br>
+                        Merchandise Mart <br>
+                        Chicago, IL
+                    </p>
+                    <p>
+                        <strong>Contact Information:</strong><br>
+                        <a href="#" class="contact-call"><i class="fa fa-phone"></i>To Be Announced</a>
+                        <a href="#" class="contact-text"><i class="fa fa-comments"></i>To Be Announced</a>
+                        <a href="#" class="contact-text"><i class="fa fa-fax"></i>To Be Announced</a>
+                        <a href="#" class="contact-mail"><i class="fa fa-envelope"></i>To Be Announced</a>
+                        <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>To Be Announced</a>
+                        <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>To Be Announced</a>
                     </p>
                 </div>
-                <br>
-                <div class="footer-socials">
-                    <a href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="scale-hover google-color"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="scale-hover mail-color show-share-bottom"><i class="fa fa-refresh"></i></a>
-                    <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
-                    <div class="clear"></div>
-                </div>
-                <p class="footer-strip">Copyright <span id="copyright-year"></span> Enabled. All Rights Reserved</p>
             </div>
-            <div class="footer-clear disabled"></div>
+            <div class="decoration"></div>
         </div>
 
-        <!-- <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a> -->
+        <div class="footer footer-dark">
+            <div class="footer-content">
+                <p class="footer-text">
+                    We are here to help give peace of mind to families and ensure our elders get the care they
+                    deserve
+
+                </p>
+            </div>
+            <br>
+            <div class="footer-socials">
+                <a href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="scale-hover google-color"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
+                <a href="#" class="scale-hover mail-color show-share-bottom"><i class="fa fa-refresh"></i></a>
+                <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+                <div class="clear"></div>
+            </div>
+            <p class="footer-strip">Copyright <span id="copyright-year"></span> Enabled. All Rights Reserved</p>
+        </div>
+        <div class="footer-clear disabled"></div>
     </div>
+
+    <!-- <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a> -->
+    <!-- </div> -->
 </body>
 
 
