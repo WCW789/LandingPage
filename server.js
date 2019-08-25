@@ -43,3 +43,5 @@ mongoose.connect(
 app.listen(PORT, function () {
   console.log("Server listening on: http://localhost:" + PORT);
 });
+
+// www.sanoseat.com  CNAME            larval-lynx-rdlvryq6trjwdsvm91n9stoc.herokudns.com

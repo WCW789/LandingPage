@@ -436,9 +436,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size:24px;
+    /* font-size:24px; */
     line-height:30px;
     font-weight:500;
+  /* margin-left: 50% */
 }
 
 h2{
@@ -750,6 +751,22 @@ label{
     margin-top:auto;
 }
 
+.responsive-deco-image2{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    height:90%
+}
+
+.test{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    height:10%
+}
+
 .preload-image{
     display:none;
 }
@@ -789,6 +806,7 @@ label{
     margin-bottom:30px;
     padding-left:20px;
     padding-right:20px;
+    /* background: gray; */
 }
 
 .content-fullscreen{
@@ -879,9 +897,10 @@ label{
     height:1px;
     width:100%;
     display:block;
-    background-color:rgba(0,0,0,0.1);
-    margin-bottom:30px;
+    background-color:gray;
+    /* margin-bottom:30px; */
     clear:both!important;
+    background:gray
 }
 
 .small-decoration{
@@ -912,8 +931,14 @@ label{
 
 @media(max-width:768px){
     .one-half{
-        width:45%;
+        width:50%;
         float:left;
+        margin-right:10%;
+    }
+
+    .one-half2{
+        width:50%;
+        float:right;
         margin-right:10%;
     }
     
@@ -923,15 +948,34 @@ label{
         margin-right:8%;
     }    
     
-    .one-half-responsive{width:100%;}
+    .one-half-responsive{
+        width:100%;    
+        /* margin-bottom:30px;
+        padding-left:20px;
+        padding-right:20px; */
+    }
+
+    .one-half2-responsive2{
+        width:100%;    
+        /* margin-bottom:30px;
+        padding-left:20px;
+        padding-right:20px; */
+    }
+
     .one-third-responsive{width:100%;} 
 }
 
 @media(min-width:767px){
     .one-half, .one-half-responsive{
-        width:45%;
+        width:50%;
         float:left;
-        margin-right:10%;
+        /* margin-right:10%; */
+    }
+
+    .one-half2, .one-half-responsive2 {
+        width:50%;
+        float:right;
+        /* margin-right:10%; */
     }
     
     .one-third, .one-third-responsive{
@@ -3843,7 +3887,7 @@ calendar*{
 .cover-page-content{
     position:absolute;
     z-index:2;
-    top:50%;
+    margin-top:7%;
     left:50%;
 }
 
@@ -8142,6 +8186,17 @@ html, body {
 }
 
 #page-content-scroll{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -19px; /* Decrease this value for cross-browser compatibility */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#page-content-scroll2{
+    background: gray;
     position: absolute;
     top: 0;
     bottom: 0;
