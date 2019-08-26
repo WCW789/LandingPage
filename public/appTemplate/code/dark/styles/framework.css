@@ -451,6 +451,7 @@ h1{
     /* font-size:24px; */
     line-height:30px;
     font-weight:500;
+    width: 100%;
   /* margin-left: 50% */
 }
 
@@ -771,6 +772,15 @@ label{
     margin-top:20%;
 }
 
+.responsive-deco-image3{
+    width:35%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    max-height:100%;
+    /* display:block; */
+}
+
 .test{
     width:75%;
     margin-left:auto;
@@ -1065,6 +1075,45 @@ label{
         margin-left:auto;
         margin-right:auto;
         margin-top:auto;
+    }
+
+    
+    .responsive-deco-image3{
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:auto;
+        max-height:100%;
+    }
+
+}
+
+    @media(min-width:50px) and (max-width:499px){
+        .boxed-text{
+            max-width:400px;
+            margin-left:auto;
+            margin-right:auto;
+        }    
+        
+        .boxed-item{
+            max-width:400px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    
+        .responsive-deco-image2{
+            width:75%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:auto;
+        }
+
+    .responsive-deco-image3{
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:auto;
+        max-height:100%;
     }
 }
 
@@ -3145,7 +3194,7 @@ ul.tabs li.active-tab{
 }
 
 .portfolio-item .overlay{
-    opacity:0.9;
+    opacity:0.1;
 }
 
 .portfolio-two .portfolio-item .portfolio-share i{
@@ -3895,7 +3944,7 @@ calendar*{
 }
 
 .cover-page .overlay{
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0, 0, 0, 0.418);
     position:fixed;
     top:0px;
     left:0px;
@@ -3961,6 +4010,7 @@ calendar*{
     font-weight:600!important;
     text-align:center;
     margin-bottom:0px;
+    margin-top: 100%
 }
 
 .unboxed-layout .index-page h1{
