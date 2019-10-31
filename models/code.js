@@ -5,7 +5,7 @@ const contactSchema = new Schema({
   namePerson: {
     type: String,
     trim: true,
-    required: "Name is Required"
+    // required: "Name is Required"
   },
   email: {
     type: String,
@@ -13,11 +13,11 @@ const contactSchema = new Schema({
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     required: "Email is Required"
   },
-  message: {
-    type: String,
-    trim: true,
-    required: "Message"
-  },
+  // message: {
+  //   type: String,
+  //   trim: true,
+  //   required: "Message"
+  // },
   formCreated: {
     type: Date,
     default: Date.now

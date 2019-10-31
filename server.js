@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 let env = require('dotenv').load;
-let exphbs = require('express-handlebars')
 
 let app = express();
 let PORT = process.env.PORT || 8080;
@@ -14,12 +13,11 @@ app.use(bodyParser.json());
 
 let Contact = require("./models/code.js")
 
-app.set('views', './public')
+app.set('views', '/public')
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.use(express.static("public"));
-app.use(express.static(__dirname + '/public/appTemplate/code/dark'));
 app.use(express.static(__dirname + '/public'));
 
 require("./routes/html-routes")(app);
@@ -43,5 +41,3 @@ mongoose.connect(
 app.listen(PORT, function () {
   console.log("Server listening on: http://localhost:" + PORT);
 });
-
-// www.sanoseat.com  CNAME            larval-lynx-rdlvryq6trjwdsvm91n9stoc.herokudns.com
