@@ -5,32 +5,38 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+	<head>
+		<title>Sano Seat</title>
+		<link rel='icon' href='favicon.png' type='image/x-icon'>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/skel.css" />
 
-<head>
-	<title>Sano Seat</title>
-	<link rel='icon' href='favicon.png' type='image/x-icon'>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
 
-	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/skel.min.js"></script>
-	<script src="/js/skel-layers.min.js"></script>
-	<script src="/js/init.js"></script>
+		<noscript>
 
-	<noscript>
-		<link rel="stylesheet" href="/css/skel.css" />
-		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/style-xlarge.css" />
-	</noscript>
-	
-    <script type="text/javascript" src="scripts/jquery.js"></script>
-	<script src="https://code.jquery.com/jquery.js"></script>
-	
-</head>
 
-<body>
+			<link rel="stylesheet" href="css/style-xsmall.css" />
+			<link rel="stylesheet" href="css/style-small.css" />
+			<link rel="stylesheet" href="css/style-medium.css" />
+			<link rel="stylesheet" href="css/style-large.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		</noscript>
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+	</head>
+	<body>
+
+
 
 	<!-- Header -->
 	<header id="header" class="skel-layers-fixed">
@@ -55,12 +61,14 @@
 				<div class="centered">
 					<img id="top-logo" src="images/logo_sanoseat.png" alt="" />
 					<!-- <h2 >SANO SEAT</h2> -->
-					<p id="sano-byline">a wireless monitoring solution for prevention of debilitating pressure ulcers
+					<p id="sano-byline">
 					</p>
 				</div>
+			</header>
 		</div>
+	</section>
 
-		</header>
+
 		<div class="container">
 			<section>
 				<h2>Improving Patient Care</h2>
@@ -121,47 +129,43 @@
 					to improved health outcomes.
 					All user information is handled securely using private data storage best practices </p>
 			</section>
-			<hr class="major" id="our-team" />
-			<h2>Our Team</h2>
-			<div class="row">
-				<div class="3u">
-					<!-- TEAM -->
-					<section class="special">
-						<a href="#" class="image fit"><img src="images/rob_img.jpg" alt="" /></a>
 
-					</section>
-				</div>
-				<div class="3u">
-					<section class="special">
-						<h3>Rob Seaberg</h3>
-						<p>Background in data analytics. Previously worked in healthcare for 7+ years, with several
-							years of direct geriatric care including long term care and community environments </p>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/rob-seaberg/" target="_blank"
-									class="button alt">Learn More</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="3u">
-					<section class="special">
-						<a href="#" class="image fit"><img src="images/winnie_img.jpg" alt="" /></a>
-					</section>
-				</div>
-				<div class="3u">
-					<section class="special">
-						<h3>Winnie Wu</h3>
-						<p>Working at a healthcare logistics company. Previously a finance analyst at a food & beverage
-							company, with a background in data analytics and web development</p>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/winnie-wu-profile/" target="_blank"
-									class="button alt">Learn More</a></li>
-						</ul>
-					</section>
-				</div>
-			</div>
+		<hr class="major" id="our-team" />
+						<h2>Our Team</h2>
+						<div class="row" id="team-row">
+							<div class="6u">
+								<section class="special">
+									<a href="#" class="image fit" id="team-img"><img src="images/rob_img.jpg" alt="" /></a>
+
+								</section>
+<!--							</div>-->
+<!--							<div class="3u">-->
+								<section class="special" >
+										<h3>Rob&nbsp;Seaberg</h3>
+										<p >Background in data analytics. Previously worked in healthcare for 7+ years, with several years of direct geriatric care including long term care and community environments </p>
+										<ul class="actions">
+											<li><a href="https://www.linkedin.com/in/rob-seaberg/" target="_blank" class="button alt">Learn More</a></li>
+										</ul>
+								</section>
+							</div>
+							<div class="6u">
+								<section class="special">
+									<a href="#" class="image fit" id="team-img"><img src="images/winnie_img.jpg" alt="" /></a>
+								</section>
+<!--							</div>-->
+<!--							<div class="3u">-->
+								<section class="special">
+										<h3>Winnie&nbsp;Wu</h3>
+										<p>Has an MBA with 7+ years as a financial analyst at a food & beverage company, with a background in data analytics and specialty in web development </p>
+										<ul class="actions">
+											<li><a href="https://www.linkedin.com/in/winnie-wu-profile/" target="_blank" class="button alt">Learn More</a></li>
+										</ul>
+								</section>
+							</div>
+						</div>
+					</div>
 		</div>
-	</section>
-
+			</section>
 
 	<!-- Footer -->
 	<footer id="footer">
